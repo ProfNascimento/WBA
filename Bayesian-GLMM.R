@@ -23,7 +23,3 @@ print(fit.mod30,digits=3)
 
 ## Convergence Checking
 plot(fit.mod30, plotfun = "trace")
-
-# Posterior Predictive Checks
-pp_check(fit.mod30, plotfun = "stat", stat = "mean")
-pp_check(fit.mod30, plotfun = "dens_overlay")
