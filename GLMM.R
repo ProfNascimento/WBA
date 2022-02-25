@@ -99,7 +99,7 @@ wilcox.test(set[set$Dose==3 & set$Groups=="SHAM-AC" & set$Side=="L","Entropy"],
             set[set$Dose==3 & set$Groups=="SHAM-CC" & set$Side=="L","Entropy"])$p.val
 
 ## Gamma-Regression (GLMM)
-set.seed(1990)
+set.seed(90)
 #set$TimeH=(set$Time/60) # UNIT per hour 
 fit.m=glmer(Entropy ~ -1 + Groups*Dose + Time*Side + (1|ID), 
             data=set,family=Gamma(link="log"))
